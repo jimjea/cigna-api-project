@@ -1,0 +1,15 @@
+{
+  "name": "cigna-api",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jimjea/cigna-api",
+  "main": "index.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular-ui-router": "~0.2.11",
+    "angular": "~1.4.3"
+  }
+}
