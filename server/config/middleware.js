@@ -1,5 +1,7 @@
 // All middleware and router injections to be placed here
 
+'use strict';
+
 var bodyParser = require('body-parser');
 
 module.exports = function(app, express) {
