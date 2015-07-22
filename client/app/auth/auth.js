@@ -9,6 +9,8 @@ angular.module('cigna.auth', ['ui.router'])
 		})
 }])
 
-.controller('AuthController', ['$scope', function($scope) {
-	
+.controller('AuthController', ['$scope', 'Auth', function($scope, Auth) {
+	$scope.goToCigna = function() {
+		Auth.userLogin();
+	}
 }])
