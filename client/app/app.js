@@ -1,12 +1,16 @@
 'use strict';
 
-angular.module('cigna', [
-	'cigna.auth',
-	'cigna.authServices',
-	'cigna.userInfo',
-	'cigna.userInfoServices'
-])
+(function() {
 
-.config(['$urlRouterProvider', function($urlRouterProvider) {
-  $urlRouterProvider.otherwise('/login');
-}])
+	angular.module('cigna', [
+		'cigna.auth',
+		'cigna.authServices',
+		'cigna.userInfo',
+		'cigna.userInfoServices'
+	])
+
+	.config(['$urlRouterProvider', function($urlRouterProvider) {
+		$urlRouterProvider.otherwise('/login');
+	}])
+
+})();

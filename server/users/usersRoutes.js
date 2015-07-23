@@ -8,4 +8,7 @@ module.exports = function(app) {
 	app.route('/userAuth')
 	  .get(userController.authentication);
 
+  app.route('/tokenRetrieval')
+  	.post(userController.getToken);
+
 };

@@ -15,9 +15,23 @@ angular.module('cigna.authServices', [])
 		})
 	};
 
+	var getUserData = function(data) {
+		return $http({
+			method: 'POST',
+			url: 'http://localhost:8000/users/tokenRetrieval',
+			data: data
+		})
+		.success(function(res) {
+			return res;
+		})
+		.error(function(error) {
+			console.error(error);
+		})
+	}
 
 	return {
-		userLogin: userLogin
+		userLogin: userLogin,
+		getUserData: getUserData
 	};
 
 }]);
