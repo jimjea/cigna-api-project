@@ -8,7 +8,7 @@ angular.module('cigna.authServices', [])
 			url: 'http://localhost:8000/users'
 		})
 		.success(function(res) {
-			console.log(res);
+			return res;
 		})
 		.error(function(error) {
 			console.error(error);
