@@ -6,7 +6,8 @@
     "bcrypt": "^0.8.0",
     "body-parser": "^1.6.6",
     "express": "^4.8.6",
-    "jwt-simple": "~0.2.0"
+    "jwt-simple": "~0.2.0",
+    "request": "^2.60.0"
   },
   "devDependencies": {
     "karma": "^0.12.23",
