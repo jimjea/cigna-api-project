@@ -1,1 +1,2 @@
-services.js
+angular.module('cigna.userInfoServices', []) 
+
