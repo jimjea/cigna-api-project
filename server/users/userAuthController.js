@@ -17,6 +17,10 @@ module.exports = {
   	  console.log("Got error: " + e.message);
   	});
 
+  },
+
+  getToken: function(req, res) {
+    
   }
 
 

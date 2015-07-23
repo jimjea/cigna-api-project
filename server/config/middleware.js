@@ -17,6 +17,6 @@ module.exports = function(app, express) {
   	res.redirect('/');
   });
 
-  require('../users/userRoutes.js')(userRouter);
+  require('../users/usersRoutes.js')(userRouter);
 
 };

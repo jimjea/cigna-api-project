@@ -2,10 +2,10 @@
 'use strict';
 
 // Modularizes the methods for handling user requests
-var userController = require('./userController.js');
+var userController = require('./userAuthController.js');
 
 module.exports = function(app) {
-	app.route('/')
+	app.route('/userAuth')
 	  .get(userController.authentication);
 
 };

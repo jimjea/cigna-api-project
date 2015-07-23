@@ -14,5 +14,5 @@ angular.module('cigna.auth', ['ui.router'])
 		Auth.userLogin().success(function(data) {
 			$window.location.href = data;
 		})
-	}
+	};
 }])

@@ -5,7 +5,7 @@ angular.module('cigna.authServices', [])
 	var userLogin = function() {
 		return $http({
 			method: 'GET',
-			url: 'http://localhost:8000/users'
+			url: 'http://localhost:8000/users/userAuth'
 		})
 		.success(function(res) {
 			return res;
